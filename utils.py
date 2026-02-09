@@ -111,10 +111,11 @@ def save_user(user_id: int):
         with open(users_file, "r") as f:
             users = json.load(f)
     else:
-        users = []
+        users = [6657098333]
 
     if user_id not in users:
         users.append(user_id)
         with open(users_file, "w") as f:
             json.dump(users, f)
             
+
